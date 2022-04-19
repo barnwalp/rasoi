@@ -1,0 +1,27 @@
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../images/hero_picture.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  nav {
+    height: size(75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      margin-left: size(20);
+      display: inline-block;
+      width: size(200);
+    }
+    .nav-elements {
+      display: inline-block;
+      a {
+        margin-right: size(30);
+        font-weight: 300;
+        color: $White;
+        font-size: $font-lg;
+      }
+    }
+  }
+}
