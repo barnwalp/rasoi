@@ -33,8 +33,8 @@ a:hover {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../images/hero_picture.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/hero_picture.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../images/hero_picture.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/hero_picture.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -65,9 +65,36 @@ header nav .nav-elements {
 }
 
 header nav .nav-elements a {
-  margin-right: 1.875rem;
+  margin-right: 1.25rem;
   font-weight: 300;
   color: #FFF;
   font-size: 1.25rem;
+}
+
+header nav .hamburger-menu {
+  margin-right: 20px;
+}
+
+header nav .hamburger-menu span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #FFF;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 37.5rem) {
+  header nav img {
+    width: 9.375rem;
+  }
+  header nav .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  header nav .hide-for-desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
