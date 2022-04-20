@@ -57,7 +57,7 @@ header nav {
 header nav img {
   margin-left: 1.25rem;
   display: inline-block;
-  width: 12.5rem;
+  width: 9.375rem;
 }
 
 header nav .nav-elements {
@@ -81,20 +81,36 @@ header nav .hamburger-menu span {
   height: 2px;
   background-color: #FFF;
   margin-bottom: 5px;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
-@media screen and (max-width: 37.5rem) {
-  header nav img {
-    width: 9.375rem;
-  }
-  header nav .hide-for-mobile {
-    display: none;
-  }
+header nav .open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header nav .open span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header nav .open span:nth-child(2) {
+  opacity: 0;
+}
+
+header nav .hide-for-mobile {
+  display: none;
 }
 
 @media screen and (min-width: 37.5rem) {
   header nav .hide-for-desktop {
     display: none;
+  }
+  header nav img {
+    width: 12.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

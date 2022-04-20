@@ -12,7 +12,7 @@ header {
     img {
       margin-left: size(20);
       display: inline-block;
-      width: size(200);
+      width: size(150);
     }
     .nav-elements {
       display: inline-block;
@@ -31,19 +31,33 @@ header {
         height: 2px;
         background-color: $White;
         margin-bottom: 5px;
+        transform-origin: 3px 1px;
+        transition: all 300ms ease-in-out;
       }
     }
-    @media screen and (max-width: size(600)) {
-      img {
-        width: size(150);
+    .open {
+      span {
+        &:first-child {
+          transform: rotate(45deg);
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          // display: none;
+          opacity: 0;
+        }
       }
-      .hide-for-mobile {
-        display: none;
-      }
+    }
+    .hide-for-mobile {
+      display: none;
     }
     @media screen and (min-width: size(600)) {
       .hide-for-desktop {
         display: none;
+      }
+      img {
+        width: size(200);
       }
     }
   }
