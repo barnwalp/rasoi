@@ -120,6 +120,30 @@ header .overlay-mobile-menu {
 
 header .menu-for-mobile {
   visibility: hidden;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: #FFF;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+header .menu-for-mobile a {
+  color: #2D314D;
+  margin-top: 15px;
+}
+
+header .menu-for-mobile a:last-child {
+  margin-bottom: 15px;
 }
 
 header nav {
