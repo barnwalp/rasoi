@@ -44,10 +44,22 @@ header {
     .nav-elements {
       display: inline-block;
       a {
+        position: relative;
         margin-right: size(20);
         font-weight: 300;
         color: $White;
         font-size: $font-lg;
+        &:hover {
+          &::after {
+            content: "";
+            position: absolute;
+            width: 105%;
+            height: 3px;
+            background-color: $PrimaryColor;
+            top: 40px;
+            left:0;
+          }
+        }
       }
     }
     .hamburger-menu {

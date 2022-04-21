@@ -170,10 +170,21 @@ header nav .nav-elements {
 }
 
 header nav .nav-elements a {
+  position: relative;
   margin-right: 1.25rem;
   font-weight: 300;
   color: #FFF;
   font-size: 1.25rem;
+}
+
+header nav .nav-elements a:hover::after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 3px;
+  background-color: #E67E22;
+  top: 40px;
+  left: 0;
 }
 
 header nav .hamburger-menu {
