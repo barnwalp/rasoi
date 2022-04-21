@@ -98,6 +98,23 @@ a:hover {
   text-decoration: none;
 }
 
+.btn {
+  background-color: #E67E22;
+  padding: 10px 15px;
+  border: none;
+  color: #FFF;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-color: #CF6D17;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #E67E22;
+}
+
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../../images/hero_picture.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/hero_picture.jpg);

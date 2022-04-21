@@ -53,3 +53,18 @@ a:visited,
 a:hover {
   text-decoration: none;
 }
+
+.btn {
+  background-color: $PrimaryColor;
+  padding: 10px 15px;
+  border: none;
+  color: $White;
+  border-radius: 25px;
+  &:hover {
+    background-color: $DarkPrimaryColor;
+  }
+  &-ghost {
+    background-color: transparent;
+    border: 1px solid $PrimaryColor;
+  }
+}
