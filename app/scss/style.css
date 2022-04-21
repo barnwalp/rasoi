@@ -1,3 +1,69 @@
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: hidden;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    visibility: hidden;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out 1 forwards;
+          animation: fade-in 300ms ease-in-out 1 forwards;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out 1 forwards;
+          animation: fade-out 300ms ease-in-out 1 forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -39,6 +105,21 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+header .overlay-mobile-menu {
+  visibility: hidden;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  background: linear-gradient(black, transparent);
+  height: 100vh;
+  width: 100%;
+  top: 4.6875rem;
+  opacity: 0.5;
+}
+
+header .menu-for-mobile {
+  visibility: hidden;
 }
 
 header nav {
