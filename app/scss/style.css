@@ -57,7 +57,7 @@ header nav {
 header nav img {
   margin-left: 1.25rem;
   display: inline-block;
-  width: 9.375rem;
+  width: 12.5rem;
 }
 
 header nav .nav-elements {
@@ -101,16 +101,18 @@ header nav .open span:nth-child(2) {
   opacity: 0;
 }
 
-header nav .hide-for-mobile {
-  display: none;
+@media screen and (max-width: 37.5rem) {
+  header nav .hide-for-mobile {
+    display: none;
+  }
+  header nav img {
+    width: 9.375rem;
+  }
 }
 
 @media screen and (min-width: 37.5rem) {
   header nav .hide-for-desktop {
     display: none;
-  }
-  header nav img {
-    width: 12.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

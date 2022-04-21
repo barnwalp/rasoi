@@ -1,3 +1,27 @@
+// ######## mixin ##########
+
+// Convert px value into rem
+$base-size: 16;
+//You can replace rem with any other value you want (rem is most preferred value for web)
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+// ######### Variables #############
+// Colors
+$PrimaryColor: #E67E22;
+$DarkPrimaryColor: #CF6D17;
+$LightGray: #F4F4F4;
+$White: #FFF;
+
+// Font-size
+$font-sm: size(14);
+$font-med: size(16);
+$font-lg: size(20);
+$font-xlg: size(52);
+
+// ######### Global Settings #########
+
 html {
   font-size: 100%;
   box-sizing: border-box;

@@ -12,7 +12,7 @@ header {
     img {
       margin-left: size(20);
       display: inline-block;
-      width: size(150);
+      width: size(200);
     }
     .nav-elements {
       display: inline-block;
@@ -44,20 +44,21 @@ header {
           transform: rotate(-45deg);
         }
         &:nth-child(2) {
-          // display: none;
           opacity: 0;
         }
       }
     }
-    .hide-for-mobile {
-      display: none;
+    @media screen and (max-width: size(600)) {
+      .hide-for-mobile {
+        display: none;
+      }
+      img {
+        width: size(150);
+      }
     }
     @media screen and (min-width: size(600)) {
       .hide-for-desktop {
         display: none;
-      }
-      img {
-        width: size(200);
       }
     }
   }
