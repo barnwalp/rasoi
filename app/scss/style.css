@@ -279,9 +279,19 @@ header .hero {
   width: 85%;
 }
 
-.section-heading h2, .section-heading p {
+.section-heading h2 {
+  text-transform: uppercase;
   text-align: center;
   margin-top: 40px;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.section-heading p {
+  margin-top: 50px;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .section-heading::after {
@@ -289,7 +299,7 @@ header .hero {
   position: absolute;
   width: 80px;
   height: 3px;
-  top: 45px;
+  top: 62px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -305,9 +315,25 @@ header .hero {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.section-columns-items {
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-bottom: 20px;
+}
+
 .section-columns-items .big-icon {
   color: #E67E22;
   font-size: 5rem;
   font-weight: normal;
+}
+
+.section-columns-items h3 {
+  font-weight: 400;
+}
+
+.section-columns-items p {
+  font-weight: 300;
+  text-align: justify;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */
