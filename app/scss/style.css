@@ -295,4 +295,19 @@ header .hero {
   margin: 0 auto;
   background-color: #E67E22;
 }
+
+.section-columns {
+  width: 85%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section-columns-items .big-icon {
+  color: #E67E22;
+  font-size: 5rem;
+  font-weight: normal;
+}
 /*# sourceMappingURL=style.css.map */
