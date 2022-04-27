@@ -18,3 +18,7 @@ hamburger_menu.addEventListener('click', function(){
     mobile_menu.classList.remove('fade-out');
   }
 });
+
+let content = document.querySelector('.section-heading h2');
+let height = content.offsetHeight + 20;
+content.style.setProperty('--offset', height+'px');

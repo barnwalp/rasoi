@@ -10,23 +10,24 @@
       margin-top: 40px;
       font-weight: 300;
       font-size: 2rem;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 3px;
+        top: var(--offset);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: $PrimaryColor;
+      }
     } 
     p {
       margin-top: 50px;
       font-weight: 300;
       text-align: center;
       font-size: 1.5rem;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 3px;
-      top: 62px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      background-color: $PrimaryColor;
     }
   }
   &-columns {

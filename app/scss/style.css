@@ -287,23 +287,24 @@ header .hero {
   font-size: 2rem;
 }
 
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  top: var(--offset);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #E67E22;
+}
+
 .section-heading p {
   margin-top: 50px;
   font-weight: 300;
   text-align: center;
   font-size: 1.5rem;
-}
-
-.section-heading::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 3px;
-  top: 62px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  background-color: #E67E22;
 }
 
 .section-columns {
