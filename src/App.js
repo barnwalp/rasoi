@@ -42,10 +42,10 @@ const App = () => {
 					<a href="#">Reviews</a>
 					<a href="#">Sign Up</a>
 				</div>
-				<div className="hero">
-					<h1>Goodbye junk food.<br />Hello super healthy food</h1>
-					<a className="btn" href="#">I'm hungary</a>
-					<a className="btn btn-ghost" href="#">Show me more</a>
+				<div className="hero text-white w-4/5 mx-auto absolute top-44 left-32 text-4xl font-bold">
+					<h1 className="mb-4">Goodbye junk food.<br />Hello super healthy food</h1>
+					<a className="btn bg-primary rounded-full px-4 py-2 text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
+					<a className="btn border border-primary rounded-full px-4 py-2 text-2xl hover:bg-darkprimary" href="#">Show me more</a>
 				</div>
 			</header>
 
