@@ -1,14 +1,13 @@
 import { Fragment } from 'react';
 import logo from './assets/rasoi_logo.png';
-import amritsar from './assets/amrtisar.jpg';
+// import hero from './assets/hero_picture.jpg';
+// import amritsar from './assets/amrtisar.jpg';
 // import delhi from './assets/delhi.jpg';
 // import jaipur from './assets/jaipur.jpg';
 // import mumbai from './assets/mumbai.jpg';
 import chicken from './assets/chicken.jpg';
 import dosa from './assets/dosa.jpg'
 import fish from './assets/fish.jpg';
-import hero from './assets/hero_picture.jpg';
-import idli from './assets/idli.jpg';
 import jalebi from './assets/jalebi.jpg';
 import kebab from './assets/paneer_kebab.jpg';
 import paratha from './assets/paratha.jpg';
@@ -19,10 +18,10 @@ import seekh_kebab from './assets/seekh_kebab.jpg';
 const App = () => {
   return (
 		<Fragment>
-			<header>
+			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
 				<div class="overlay-mobile-menu"></div>
-				<nav>
-					<img class="logo" src={ logo } alt="Rasoi logo" />
+				<nav className="h-20 flex justify-between items-center">
+					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div class="nav-elements hide-for-mobile">
 						<a href="#">Food Delivery</a>
 						<a href="#">How it Works</a>
