@@ -23,13 +23,13 @@ const App = () => {
 				<nav className="h-20 flex justify-between items-center">
 					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div className="nav-elements inline-block hide-for-mobile">
-						<a href="#">Food Delivery</a>
-						<a href="#">How it Works</a>
-						<a href="#">Our Cities</a>
-						<a href="#">Reviews</a>
-						<a href="#">Sign Up</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Food Delivery</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">How it Works</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Our Cities</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Reviews</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Sign Up</a>
 					</div>
-					<div className="hamburger-menu hide-for-desktop">
+					<div className="hamburger-menu hidden hide-for-desktop">
 						<span></span>
 						<span></span>
 						<span></span>
