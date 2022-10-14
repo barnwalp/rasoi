@@ -14,15 +14,22 @@ import paratha from './assets/paratha.jpg';
 import samosa from './assets/samosa.jpg';
 import seekh_kebab from './assets/seekh_kebab.jpg';
 
+// breakpoints in tailwind  by default apply as min-width
+// sm:bg-blue-500 will apply for screens larger than sm
+// 	"sm": "640px",
+// 	"md": "768px",
+// 	"lg": "1024px",
+// 	"xl": "1280px",
+// 	"2xl": "1536px",
 
 const App = () => {
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
 				<div className="overlay-mobile-menu"></div>
-				<nav className="h-20 flex justify-between items-center">
+				<nav className="h-20 md:flex md:justify-between md:items-center">
 					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
-					<div className="nav-elements inline-block hide-for-mobile">
+					<div className="nav-elements hidden md:inline-block hide-for-mobile">
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Food Delivery</a>
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">How it Works</a>
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Our Cities</a>
@@ -42,10 +49,10 @@ const App = () => {
 					<a href="#">Reviews</a>
 					<a href="#">Sign Up</a>
 				</div>
-				<div className="hero text-white w-4/5 mx-auto absolute top-44 left-32 text-4xl font-bold">
+				<div className="hero text-white absolute text-3xl top-64 left-12 md:top-44 md:left-32 md:text-4xl font-bold">
 					<h1 className="mb-4">Goodbye junk food.<br />Hello super healthy food</h1>
-					<a className="btn bg-primary rounded-full px-4 py-2 text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
-					<a className="btn border border-primary rounded-full px-4 py-2 text-2xl hover:bg-darkprimary" href="#">Show me more</a>
+					<a className="btn inline-block bg-primary rounded-full text-xl px-4 py-2 md:text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
+					<a className="btn border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#">Show me more</a>
 				</div>
 			</header>
 
