@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import { Turn as Hamburger } from 'hamburger-react';
+import { Fragment, useState } from 'react';
 import logo from './assets/rasoi_logo.png';
 // import hero from './assets/hero_picture.jpg';
 // import amritsar from './assets/amrtisar.jpg';
@@ -24,6 +23,13 @@ import seekh_kebab from './assets/seekh_kebab.jpg';
 // 	"2xl": "1536px",
 
 const App = () => {
+	const [isNavOpen, setIsNavOpen] = useState(false);
+	const handleClick = () => {
+		setIsNavOpen((prevState) => {
+			console.log(prevState);
+			return !prevState;
+		})
+	}
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
@@ -37,16 +43,13 @@ const App = () => {
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Reviews</a>
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Sign Up</a>
 					</div>
-					{/*}
-					<div className="hamburger-menu mr-5 md:hidden hide-for-desktop">
+					<div onClick={handleClick} className="hamburger-menu mr-5 md:hidden hide-for-desktop">
 						<span className="block w-6 h-0.5 bg-white mb-1"></span>
 						<span className="block w-6 h-0.5 bg-white mb-1"></span>
 						<span className="block w-6 h-0.5 bg-white mb-1"></span>
 					</div>
-					{*/}
-					<Hamburger color="white" size={24} />
 				</nav>
-				<div className="menu-for-mobile md:hidden">
+				<div className={isNavOpen ? "block" : "hidden"}>
 					<a href="#">Food Delivery</a>
 					<a href="#">How it Works</a>
 					<a href="#">Our Cities</a>
