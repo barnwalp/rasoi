@@ -49,12 +49,12 @@ const App = () => {
 						<span className="block w-6 h-0.5 bg-white mb-1"></span>
 					</div>
 				</nav>
-				<div className={isNavOpen ? "block" : "hidden"}>
-					<a href="#">Food Delivery</a>
-					<a href="#">How it Works</a>
-					<a href="#">Our Cities</a>
-					<a href="#">Reviews</a>
-					<a href="#">Sign Up</a>
+				<div className={isNavOpen ? "absolute left-0 right-0 mx-auto mt-6 bg-white w-4/5 flex flex-col items-center rounded-lg" : "hidden"}>
+					<a className="mt-4 hover:text-primary" href="#">Food Delivery</a>
+					<a className="mt-4 hover:text-primary" href="#">How it Works</a>
+					<a className="mt-4 hover:text-primary" href="#">Our Cities</a>
+					<a className="mt-4 hover:text-primary" href="#">Reviews</a>
+					<a className="mt-4 mb-4 hover:text-primary" href="#">Sign Up</a>
 				</div>
 				<div className="hero text-white absolute text-3xl top-64 left-12 md:top-44 md:left-32 md:text-4xl font-bold">
 					<h1 className="mb-4">Goodbye junk food.<br />Hello super healthy food</h1>
