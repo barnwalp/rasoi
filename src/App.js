@@ -33,7 +33,7 @@ const App = () => {
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
-				<div className="overlay-mobile-menu"></div>
+				<div className={isNavOpen ? "overlay-mobile-menu absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white" : "hidden"}></div>
 				<nav className="h-20 flex justify-between items-center">
 					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div className="nav-elements hidden md:inline-block hide-for-mobile">
