@@ -44,9 +44,9 @@ const App = () => {
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Sign Up</a>
 					</div>
 					<div onClick={handleClick} className="hamburger-menu mr-5 md:hidden hide-for-desktop">
-						<span className="block w-6 h-0.5 bg-white mb-1"></span>
-						<span className="block w-6 h-0.5 bg-white mb-1"></span>
-						<span className="block w-6 h-0.5 bg-white mb-1"></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-2 rotate-45 origin-top-left" : "block w-6 h-0.5 bg-white mb-1"}></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 opacity-0" : "block w-6 h-0.5 bg-white mb-1"}></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 -rotate-45 origin-bottom-left" : "block w-6 h-0.5 bg-white mb-1"}></span>
 					</div>
 				</nav>
 				<div className={isNavOpen ? "absolute left-0 right-0 mx-auto mt-6 bg-white w-4/5 flex flex-col items-center rounded-lg" : "hidden"}>
