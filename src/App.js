@@ -33,7 +33,7 @@ const App = () => {
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
-				<div className={isNavOpen ? "overlay-mobile-menu absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white" : "hidden"}></div>
+				<div className={isNavOpen ? "overlay-mobile-menu absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white transition-all ease-in-out delay-150" : "invisible"}></div>
 				<nav className="h-20 flex justify-between items-center">
 					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div className="nav-elements hidden md:inline-block hide-for-mobile">
@@ -44,22 +44,22 @@ const App = () => {
 						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Sign Up</a>
 					</div>
 					<div onClick={handleClick} className="hamburger-menu mr-5 md:hidden hide-for-desktop">
-						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-2 rotate-45 origin-top-left" : "block w-6 h-0.5 bg-white mb-1"}></span>
-						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 opacity-0" : "block w-6 h-0.5 bg-white mb-1"}></span>
-						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 -rotate-45 origin-bottom-left" : "block w-6 h-0.5 bg-white mb-1"}></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-2 rotate-45 origin-top-left transition-all ease-in-out delay-150" : "block w-6 h-0.5 bg-white mb-1 transition-all ease-in-out delay-150"}></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 opacity-0 transition-all ease-in-out delay-150" : "block w-6 h-0.5 bg-white mb-1 transition-all ease-in-out delay-150"}></span>
+						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-1 -rotate-45 origin-bottom-left transition-all ease-in-out delay-150" : "block w-6 h-0.5 bg-white mb-1 transition-all ease-in-out delay-150"}></span>
 					</div>
 				</nav>
-				<div className={isNavOpen ? "absolute left-0 right-0 mx-auto mt-6 bg-white w-4/5 flex flex-col items-center rounded-lg" : "hidden"}>
+				<div className={isNavOpen ? "absolute left-0 right-0 mx-auto mt-6 bg-white w-4/5 flex flex-col items-center rounded-lg z-20 transition-all ease-in-out delay-150" : "invisible"}>
 					<a className="mt-4 hover:text-primary" href="#">Food Delivery</a>
 					<a className="mt-4 hover:text-primary" href="#">How it Works</a>
 					<a className="mt-4 hover:text-primary" href="#">Our Cities</a>
 					<a className="mt-4 hover:text-primary" href="#">Reviews</a>
-					<a className="mt-4 mb-4 hover:text-primary" href="#">Sign Up</a>
+					<a className="mt-4 mb-6 hover:text-primary" href="#">Sign Up</a>
 				</div>
 				<div className="hero text-white absolute text-3xl top-64 left-12 md:top-44 md:left-32 md:text-4xl font-bold">
 					<h1 className="mb-4">Goodbye junk food.<br />Hello super healthy food</h1>
-					<a className="btn inline-block bg-primary rounded-full text-xl px-4 py-2 md:text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
-					<a className="btn border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#">Show me more</a>
+					<a className="btn transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 md:text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
+					<a className="btn transition ease-in-out delay-75 border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#">Show me more</a>
 				</div>
 			</header>
 
