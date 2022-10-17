@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rasoi/static/css/main.df38af58.css",
+    "main.js": "/rasoi/static/js/main.ebafa5c2.js",
+    "static/media/hero_picture.jpg": "/rasoi/static/media/hero_picture.b654235590662feba96c.jpg",
+    "static/media/dosa.jpg": "/rasoi/static/media/dosa.4f34fabbd3e7b04d7868.jpg",
+    "static/media/fish.jpg": "/rasoi/static/media/fish.2eadb18f832f9df2b301.jpg",
+    "static/media/paratha.jpg": "/rasoi/static/media/paratha.769479df752ca21feca6.jpg",
+    "static/media/seekh_kebab.jpg": "/rasoi/static/media/seekh_kebab.9a16fb58b96c0229100c.jpg",
+    "static/media/jalebi.jpg": "/rasoi/static/media/jalebi.f6f8ea4879219985aca2.jpg",
+    "static/media/samosa.jpg": "/rasoi/static/media/samosa.dffccc3e4cd521587212.jpg",
+    "static/media/chicken.jpg": "/rasoi/static/media/chicken.0c3589f025cb101a7d0c.jpg",
+    "static/media/paneer_kebab.jpg": "/rasoi/static/media/paneer_kebab.9778bbc09bf4607925b3.jpg",
+    "static/media/rasoi_logo.png": "/rasoi/static/media/rasoi_logo.5ada802ccd898d17b7c4.png",
+    "index.html": "/rasoi/index.html",
+    "main.df38af58.css.map": "/rasoi/static/css/main.df38af58.css.map",
+    "main.ebafa5c2.js.map": "/rasoi/static/js/main.ebafa5c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df38af58.css",
+    "static/js/main.ebafa5c2.js"
+  ]
+}
