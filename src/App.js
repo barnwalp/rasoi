@@ -1,5 +1,9 @@
 import { Fragment, useState } from 'react';
 import logo from './assets/rasoi_logo.png';
+import { BiInfinite } from "react-icons/bi";
+import { BiAlarm } from "react-icons/bi";
+import { BiCheckCircle } from "react-icons/bi";
+import { BiCart } from "react-icons/bi";
 // import hero from './assets/hero_picture.jpg';
 // import amritsar from './assets/amrtisar.jpg';
 // import delhi from './assets/delhi.jpg';
@@ -63,15 +67,18 @@ const App = () => {
 				</div>
 			</header>
 
-			<section className="section food_delivery">
-				<div className="section-heading">
-					<h2>Get food fast &mdash; not fast food.</h2>
+			<section className="section food_delivery w-4/5">
+				<div className="section-heading relative mx-auto">
+					<h2 className="">
+						Get food fast &mdash; not fast food.
+					</h2>
 					<p className="section-details">
 						Hello, we’re Rasoi, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
 					</p>
 				</div>
 				<div className="section-columns">
 					<div className="section-columns-items">
+						<BiInfinite />
 						<ion-icon className="big-icon" name="infinite-outline"></ion-icon>
 						<h3>Up to 365 days/year</h3>
 						<p>
@@ -79,6 +86,7 @@ const App = () => {
 						</p>
 					</div>
 					<div className="section-columns-items">
+						<BiAlarm />
 						<ion-icon className="big-icon" name="alarm-outline"></ion-icon>
 						<h3>Ready in 20 minutes</h3>
 						<p>
@@ -86,6 +94,7 @@ const App = () => {
 						</p>
 					</div>
 					<div className="section-columns-items">
+						<BiCheckCircle />
 						<ion-icon className="big-icon" name="checkmark-circle-outline"></ion-icon>
 						<h3>100% organic</h3>
 						<p>
@@ -93,6 +102,7 @@ const App = () => {
 						</p>
 					</div>
 					<div className="section-columns-items">
+						<BiCart />
 						<ion-icon className="big-icon" name="file-tray-outline"></ion-icon>
 						<h3>Order anything</h3>
 						<p>
