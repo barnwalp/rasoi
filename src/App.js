@@ -37,7 +37,7 @@ const App = () => {
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
-				<div className={isNavOpen ? "overlay-mobile-menu absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white transition-all ease-in-out delay-150" : "invisible"}></div>
+				<div className={isNavOpen ? "overlay-mobile-menu absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white transition-all ease-in-out duration-150" : "invisible"}></div>
 				<nav className="h-20 flex justify-between items-center">
 					<img className="logo ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div className="nav-elements hidden md:inline-block hide-for-mobile">
@@ -107,30 +107,30 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<div className="section-meals">
-				<figure className="section-meals-photo">
-					<img src={chicken} alt="chicken"/>
+			<div className="section-meals mt-10 md:grid grid-cols-4">
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={chicken} alt="chicken"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={dosa} alt="dosa"/>
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={dosa} alt="dosa"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={fish} alt="fish"/>
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={fish} alt="fish"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={jalebi} alt="jalebi"/>
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={jalebi} alt="jalebi"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={kebab} alt="paneer kebab"/>
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={kebab} alt="paneer kebab"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={paratha} alt="paratha"/>
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={paratha} alt="paratha"/>
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={samosa} alt="samosa" />
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={samosa} alt="samosa" />
 				</figure>
-				<figure className="section-meals-photo">
-					<img src={seekh_kebab} alt="seekh kebab" />
+				<figure className="section-meals-photo bg-black overflow-hidden">
+					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={seekh_kebab} alt="seekh kebab" />
 				</figure>
 			</div>
 
