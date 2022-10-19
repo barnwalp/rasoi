@@ -66,46 +66,42 @@ const App = () => {
 					<a className="btn transition ease-in-out delay-75 border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#">Show me more</a>
 				</div>
 			</header>
-
-			<section className="section food_delivery w-4/5">
+				
+			<section className="section food_delivery w-4/5 mx-auto">
 				<div className="section-heading relative mx-auto">
-					<h2 className="">
+					<h2 className="uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 						Get food fast &mdash; not fast food.
 					</h2>
-					<p className="section-details">
+					<p className="section-details mt-12 font-light text-center text-2xl">
 						Hello, we’re Rasoi, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
 					</p>
 				</div>
-				<div className="section-columns">
-					<div className="section-columns-items">
-						<BiInfinite />
-						<ion-icon className="big-icon" name="infinite-outline"></ion-icon>
-						<h3>Up to 365 days/year</h3>
-						<p>
+				<div className="section-columns mt-6 grid md:grid-cols-4">
+					<div className="section-columns-items pr-3 pl-3 mb-5">
+						<BiInfinite className="text-primary text-7xl" />
+						<h3 className="font-medium">Up to 365 days/year</h3>
+						<p className="mt-1 font-normal text-justify">
 							Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
 						</p>
 					</div>
-					<div className="section-columns-items">
-						<BiAlarm />
-						<ion-icon className="big-icon" name="alarm-outline"></ion-icon>
-						<h3>Ready in 20 minutes</h3>
-						<p>
+					<div className="section-columns-items pr-3 pl-3 mb-5">
+						<BiAlarm className="text-primary text-7xl" />
+						<h3 className="font-medium">Ready in 20 minutes</h3>
+						<p className="mt-1 font-normal text-justify">
 							You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
 						</p>
 					</div>
-					<div className="section-columns-items">
-						<BiCheckCircle />
-						<ion-icon className="big-icon" name="checkmark-circle-outline"></ion-icon>
-						<h3>100% organic</h3>
-						<p>
+					<div className="section-columns-items pr-3 pl-3 mb-5">
+						<BiCheckCircle className="text-primary text-7xl" />
+						<h3 className="font-medium">100% organic</h3>
+						<p className="mt-1 font-normal text-justify">
 							All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
 						</p>
 					</div>
-					<div className="section-columns-items">
-						<BiCart />
-						<ion-icon className="big-icon" name="file-tray-outline"></ion-icon>
-						<h3>Order anything</h3>
-						<p>
+					<div className="section-columns-items pr-3 pl-3 mb-5">
+						<BiCart className="text-primary text-7xl" />
+						<h3 className="font-medium">Order anything</h3>
+						<p className="mt-1 font-normal text-justify">
 							We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
 						</p>
 					</div>
