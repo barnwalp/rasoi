@@ -16,7 +16,8 @@ import kebab from './assets/paneer_kebab.jpg';
 import paratha from './assets/paratha.jpg';
 import samosa from './assets/samosa.jpg';
 import seekh_kebab from './assets/seekh_kebab.jpg';
-
+import menu from './assets/menu-logo.png';
+ 
 // breakpoints in tailwind  by default apply as min-width
 // sm:bg-blue-500 will apply for screens larger than sm
 // 	"sm": "640px",
@@ -106,32 +107,60 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<div className="mt-10 md:grid grid-cols-4">
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={chicken} alt="chicken"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={dosa} alt="dosa"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={fish} alt="fish"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={jalebi} alt="jalebi"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={kebab} alt="paneer kebab"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={paratha} alt="paratha"/>
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={samosa} alt="samosa" />
-				</figure>
-				<figure className="bg-black overflow-hidden">
-					<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={seekh_kebab} alt="seekh kebab" />
-				</figure>
-			</div>
+			<section>
+				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+							Most sought Dishes &mdash; at your doorstep.
+				</h2>
+				<div className="mt-14 md:grid grid-cols-4">
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={chicken} alt="chicken"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={dosa} alt="dosa"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={fish} alt="fish"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={jalebi} alt="jalebi"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={kebab} alt="paneer kebab"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={paratha} alt="paratha"/>
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={samosa} alt="samosa" />
+					</figure>
+					<figure className="bg-black overflow-hidden">
+						<img className="w-full h-full opacity-50 scale-125 transition-all ease-linear duration-300 hover:opacity-100 hover:scale-105"  src={seekh_kebab} alt="seekh kebab" />
+					</figure>
+				</div>
+			</section>
+			<section className="mx-auto">
+				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+							How it works &mdash; Simple as 1, 2, 3.
+				</h2>
+				<div className="mt-14 grid md:grid-cols-2 mr-5">
+					<img src={menu} alt="menu" />
+					<div className="ml-8">
+						<div className="mt-8 flex">
+							<div className="text-primary border-2 px-4 py-1 text-4xl border-primary rounded-full inline-block max-w-max h-14">1</div>
+							<p className="inline font-light ml-3 text-xl">Choose the subscription plan that best fits your needs and sign up today.</p>
+						</div>
+						<div className="mt-8 flex">
+							<div className="text-primary border-2 px-4 py-1 text-4xl border-primary rounded-full inline-block max-w-full h-14">2</div>
+							<p className="inline font-light ml-3 text-xl">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+						</div>
+						<div className="mt-8 flex">
+							<div className="text-primary border-2 px-4 py-1 text-4xl border-primary rounded-full inline-block max-w-full h-14">3</div>
+							<p className="inline font-light ml-3 text-xl">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+						</div>
+						<a href="#" className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 text-white font-bold mt-8 ml-4 md:text-2xl mr-4 hover:bg-darkprimary">Subscribe</a>
+					</div>
+				</div>
+			</section>
 
 		</Fragment>
   );
