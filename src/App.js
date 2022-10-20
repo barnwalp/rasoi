@@ -1,4 +1,7 @@
 import { Fragment, useState } from 'react';
+import { AiFillStar } from 'react-icons/ai';
+import { BsFillPersonFill } from 'react-icons/bs';
+import { AiOutlineTwitter } from 'react-icons/ai';
 import logo from './assets/rasoi_logo.png';
 import locations from './assets/citi-data';
 import { BiInfinite } from "react-icons/bi";
@@ -36,16 +39,16 @@ const App = () => {
 		return (
 			<div className="ml-6">
 				<img className="h-48 w-full overflow-hidden" src={ city.url } alt={city.city} />
-				<h3>{city.city}</h3>
+				<h3 className="text-2xl mt-3 font-light uppercase">{city.city}</h3>
 				<div>
-					<p>{city.noOfCustomers}</p>
-					<p>{city.noOfChefs}</p>
-					<p>{city.twitterHandle}</p>
+					<p className="text-xl font-light mt-1"><BsFillPersonFill className="inline text-primary mr-2"/>{city.noOfCustomers}</p>
+					<p className="text-xl font-light mt-1"><AiFillStar className="inline text-primary mr-2" /> {city.noOfChefs}</p>
+					<p className="text-xl font-light mt-1 text-primary">< AiOutlineTwitter className="inline text-primary mr-2" />{city.twitterHandle}</p>
 				</div>
 			</div>
 		)
 	})
-		
+
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
