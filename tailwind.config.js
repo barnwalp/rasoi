@@ -15,6 +15,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				'hero-pattern': "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/src/assets/hero_picture.jpg')",
+				'biryani': "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/src/assets/biryani.jpg')",
 			}
 		},
   },

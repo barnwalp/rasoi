@@ -17,6 +17,10 @@ import paratha from './assets/paratha.jpg';
 import samosa from './assets/samosa.jpg';
 import seekh_kebab from './assets/seekh_kebab.jpg';
 import menu from './assets/menu-logo.png';
+import biryani from './assets/biryani.jpg';
+import aparna from './assets/Aparna-Kulkarni.jpg';
+import priya from './assets/priya-ranjan.jpg';
+import rashmi from './assets/rashmi-jhawar.jpg';
  
 // breakpoints in tailwind  by default apply as min-width
 // sm:bg-blue-500 will apply for screens larger than sm
@@ -43,7 +47,7 @@ const App = () => {
 				<div>
 					<p className="text-xl font-light mt-1"><BsFillPersonFill className="inline text-primary mr-2"/>{city.noOfCustomers}</p>
 					<p className="text-xl font-light mt-1"><AiFillStar className="inline text-primary mr-2" /> {city.noOfChefs}</p>
-					<p className="text-xl font-light mt-1 text-primary">< AiOutlineTwitter className="inline text-primary mr-2" />{city.twitterHandle}</p>
+					<p className="mb-6 text-xl font-light mt-1 text-primary">< AiOutlineTwitter className="inline text-primary mr-2" />{city.twitterHandle}</p>
 				</div>
 			</div>
 		)
@@ -183,6 +187,32 @@ const App = () => {
 				</h2>
 				<div className="w-5/6 mx-auto grid md:grid-cols-4">
 					{cities}
+				</div>
+			</section>
+			
+			<section className="text-lightgray bg-biryani h-5/6 bg-fixed bg-cover bg-center">
+				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
+						Our customers can't live without us
+				</h2>
+        <div class="w-5/6 mx-auto grid md:grid-cols-3">
+					<div class="text-xl italic mr-6 mb-16">
+						<blockquote>
+							Rasoi is just awesome! I just launched a startup which leaves me with no time for cooking, so Rasoi is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={aparna} alt="Customer_1" />Aparna Kulkarni</cite>
+						</blockquote>
+					</div>
+					<div class="text-xl italic mr-6 mb-16">
+						<blockquote>
+							Inexpensive, healthy and great meals, delivered right to my home. We have lots of food delivery here in Delhi, but no one comes even close to Rasoi. Me and my family are so in love!
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={priya} alt="Customer_2" />Priya Ranjan</cite>
+						</blockquote>
+					</div>
+					<div class="text-xl italic mr-6 mb-16">
+						<blockquote>
+							I was looking for a quick and easy food delivery service in Mumbai. I tried a lot of them and ended up with Rasoi. Best food delivery service in Hiranandani. Keep up the great work!
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block" src={rashmi} alt="Customer_3" />Rashmi Jhawar</cite>
+						</blockquote>
+					</div>
 				</div>
 			</section>
 
