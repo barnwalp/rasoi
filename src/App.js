@@ -34,8 +34,8 @@ const App = () => {
 
 	const cities = locations.map((city) => {
 		return (
-			<div>
-				<img src={ city.url } alt={city.city} />
+			<div className="ml-6">
+				<img className="h-48 w-full overflow-hidden" src={ city.url } alt={city.city} />
 				<h3>{city.city}</h3>
 				<div>
 					<p>{city.noOfCustomers}</p>
@@ -175,10 +175,10 @@ const App = () => {
 			</section>
 
 			<section>
-				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+				<h2 className="relative mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 							We're currently in these cities
 				</h2>
-				<div className="grid md:grid-cols-4">
+				<div className="w-5/6 mx-auto grid md:grid-cols-4">
 					{cities}
 				</div>
 			</section>
