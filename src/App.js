@@ -4,6 +4,7 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import logo from './assets/rasoi_logo.png';
 import locations from './assets/citi-data';
+import signUpData from './assets/sign-up-data.js';
 import { BiInfinite } from "react-icons/bi";
 import { BiAlarm } from "react-icons/bi";
 import { BiCheckCircle } from "react-icons/bi";
@@ -50,6 +51,25 @@ const App = () => {
 					<p className="mb-6 text-xl font-light mt-1 text-primary">< AiOutlineTwitter className="inline text-primary mr-2" />{city.twitterHandle}</p>
 				</div>
 			</div>
+		)
+	})
+
+	const signUp = signUpData.map((signUpPlan) => {
+		return (
+			<>
+				<div>
+					<h3>{signUpPlan.plan}</h3>
+					<h3>{signUpPlan.rate}</h3>
+					<p>{signUpPlan.ratePerMeal}</p>
+				</div>
+				<div>
+					<p>{signUpPlan.frequency}</p>
+					<p>{signUpPlan.orderTime}</p>
+					<p>{signUpPlan.access ? "Access to newest creations" : ""}</p>
+					<p>Free Delivery</p>
+				</div>
+				<a href="#">Sign Up Now</a>
+			</>
 		)
 	})
 
@@ -198,24 +218,29 @@ const App = () => {
 					<div class="text-xl italic mr-6 mb-16">
 						<blockquote>
 							Rasoi is just awesome! I just launched a startup which leaves me with no time for cooking, so Rasoi is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={aparna} alt="Customer_1" />Aparna Kulkarni</cite>
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={aparna} alt="Customer_1" />  Aparna Kulkarni</cite>
 						</blockquote>
 					</div>
 					<div class="text-xl italic mr-6 mb-16">
 						<blockquote>
 							Inexpensive, healthy and great meals, delivered right to my home. We have lots of food delivery here in Delhi, but no one comes even close to Rasoi. Me and my family are so in love!
-								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={priya} alt="Customer_2" />Priya Ranjan</cite>
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block"  src={priya} alt="Customer_2" />  Priya Ranjan</cite>
 						</blockquote>
 					</div>
 					<div class="text-xl italic mr-6 mb-16">
 						<blockquote>
 							I was looking for a quick and easy food delivery service in Mumbai. I tried a lot of them and ended up with Rasoi. Best food delivery service in Hiranandani. Keep up the great work!
-								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block" src={rashmi} alt="Customer_3" />Rashmi Jhawar</cite>
+								<cite className="mt-6 block"><img className="rounded-full w-16 h-16 object-cover inline-block" src={rashmi} alt="Customer_3" />  Rashmi Jhawar</cite>
 						</blockquote>
 					</div>
 				</div>
 			</section>
-
+			<section>
+				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
+						Start Eating Healthy Today
+				</h2>
+				{ signUp }
+			</section>
 		</Fragment>
   );
 }
