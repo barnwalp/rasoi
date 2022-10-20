@@ -35,7 +35,7 @@ const App = () => {
 	const cities = locations.map((city) => {
 		return (
 			<div>
-				<img src={city.url} alt={city.city} />
+				<img src={ city.url } alt={city.city} />
 				<h3>{city.city}</h3>
 				<div>
 					<p>{city.noOfCustomers}</p>
