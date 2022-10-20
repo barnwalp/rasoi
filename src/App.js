@@ -1,13 +1,10 @@
 import { Fragment, useState } from 'react';
 import logo from './assets/rasoi_logo.png';
+import locations from './assets/citi-data';
 import { BiInfinite } from "react-icons/bi";
 import { BiAlarm } from "react-icons/bi";
 import { BiCheckCircle } from "react-icons/bi";
 import { BiCart } from "react-icons/bi";
-import delhi from './assets/delhi.jpg';
-import jaipur from './assets/jaipur.jpg';
-import mumbai from './assets/mumbai.jpg';
-import amritsar from './assets/amritsar.jpg';
 import chicken from './assets/chicken.jpg';
 import dosa from './assets/dosa.jpg'
 import fish from './assets/fish.jpg';
@@ -34,6 +31,21 @@ const App = () => {
 			return !prevState;
 		})
 	}
+
+	const cities = locations.map((city) => {
+		return (
+			<div>
+				<img src={city.url} alt={city.city} />
+				<h3>{city.city}</h3>
+				<div>
+					<p>{city.noOfCustomers}</p>
+					<p>{city.noOfChefs}</p>
+					<p>{city.twitterHandle}</p>
+				</div>
+			</div>
+		)
+	})
+		
   return (
 		<Fragment>
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
@@ -159,6 +171,15 @@ const App = () => {
 						</div>
 						<a href="#" className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 text-white font-bold mt-8 ml-4 md:text-2xl mr-4 hover:bg-darkprimary">Subscribe</a>
 					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+							We're currently in these cities
+				</h2>
+				<div className="grid md:grid-cols-4">
+					{cities}
 				</div>
 			</section>
 
