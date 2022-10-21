@@ -237,7 +237,7 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section className="bg-lightgray mt-0 pb-24">
+			<section className="bg-lightgray mt-0 pb-12">
 				<h2 className="relative pt-10 mb-14 uppercase font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
 						Start Eating Healthy Today
 				</h2>
@@ -245,6 +245,10 @@ const App = () => {
 					{ signUp }
 				</div>
 			</section>
+
+			<footer className="bg-lightgray h-11">
+				<p className="text-darkgray text-xl font-light text-center">Copyright © Pankaj Barnwal</p>
+			</footer>
 		</Fragment>
   );
 }
