@@ -20,7 +20,6 @@ import paratha from './assets/paratha.jpg';
 import samosa from './assets/samosa.jpg';
 import seekh_kebab from './assets/seekh_kebab.jpg';
 import menu from './assets/menu-logo.png';
-import biryani from './assets/biryani.jpg';
 import aparna from './assets/Aparna-Kulkarni.jpg';
 import priya from './assets/priya-ranjan.jpg';
 import rashmi from './assets/rashmi-jhawar.jpg';
@@ -70,7 +69,7 @@ const App = () => {
 					<p className="text-lg font-light mb-1">{signUpPlan.access ? <FaCheck className="inline mr-2 text-primary"/> : <ImCross className="inline text-primary" />}{signUpPlan.access ? "Access to newest creations" : ""}</p>
 					<p className="text-lg font-light mb-1"><FaCheck className="inline mr-2 text-primary"/>Free Delivery</p>
 				</div>
-				<a className="transition ease-in-out delay-75 inline-block bg-white border-primary border rounded-full text-lg px-4 py-2 md:text-2xl mr-4 hover:bg-primary hover:text-white mb-4 text-primary" href="#">Sign Up</a>
+				<a className="transition ease-in-out delay-75 inline-block bg-white border-primary border rounded-full text-lg px-4 py-2 md:text-2xl mr-4 hover:bg-primary hover:text-white mb-4 text-primary" href="#sign-up">Sign Up</a>
 			</div>
 		)
 	})
@@ -82,11 +81,11 @@ const App = () => {
 				<nav className="h-20 flex justify-between items-center">
 					<img className="ml-4 inline-block w-48" src={ logo } alt="Rasoi logo" />
 					<div className="hidden md:inline-block">
-						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Food Delivery</a>
-						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">How it Works</a>
-						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Our Cities</a>
-						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Reviews</a>
-						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#">Sign Up</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#food-delivery">Food Delivery</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#how-it-works">How it Works</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#cities">Our Cities</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#reviews">Reviews</a>
+						<a className="relative mr-5 font-normal text-white text-xl hover:after:content-[''] hover:after:absolute hover:after:w-full hover:after:h-1 hover:after:bg-primary hover:after:top-10 hover:after:left-0" href="#sign-up">Sign Up</a>
 					</div>
 					<div onClick={handleClick} className="mr-5 md:hidden">
 						<span className={isNavOpen ? "block w-6 h-0.5 bg-white mb-2 rotate-45 origin-top-left transition-all ease-in-out duration-150" : "block w-6 h-0.5 bg-white mb-1 transition-all ease-in-out duration-150"}></span>
@@ -95,7 +94,7 @@ const App = () => {
 					</div>
 				</nav>
 				<div className={isNavOpen ? "absolute left-0 right-0 mx-auto mt-6 bg-white w-4/5 flex flex-col items-center rounded-lg z-20 transition-all ease-in-out delay-150" : "invisible"}>
-					<a className="mt-4 hover:text-primary" href="#">Food Delivery</a>
+					<a className="mt-4 hover:text-primary" href="#food-delivery">Food Delivery</a>
 					<a className="mt-4 hover:text-primary" href="#">How it Works</a>
 					<a className="mt-4 hover:text-primary" href="#">Our Cities</a>
 					<a className="mt-4 hover:text-primary" href="#">Reviews</a>
@@ -103,12 +102,12 @@ const App = () => {
 				</div>
 				<div className="text-white absolute text-3xl top-64 left-12 md:top-44 md:left-32 md:text-4xl font-bold">
 					<h1 className="mb-4">Goodbye junk food.<br />Hello super healthy food</h1>
-					<a className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 md:text-2xl mr-4 hover:bg-darkprimary h-full" href="#">I'm hungary</a>
-					<a className="transition ease-in-out delay-75 border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#">Show me more</a>
+					<a className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 md:text-2xl mr-4 hover:bg-darkprimary h-full" href="#meals">I'm hungary</a>
+					<a className="transition ease-in-out delay-75 border border-primary rounded-full text-xl px-4 py-2 md:text-2xl hover:bg-darkprimary" href="#sign-up">Show me more</a>
 				</div>
 			</header>
 				
-			<section className="w-4/5 mx-auto">
+			<section id="food-delivery" className="w-4/5 mx-auto">
 				<div className="relative mx-auto">
 					<h2 className="uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 						Get food fast &mdash; not fast food.
@@ -148,7 +147,7 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section>
+			<section id="meals">
 				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 							Most sought Dishes &mdash; at your doorstep.
 				</h2>
@@ -179,7 +178,7 @@ const App = () => {
 					</figure>
 				</div>
 			</section>
-			<section className="mx-auto">
+			<section id="how-it-works" className="mx-auto">
 				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 							How it works &mdash; Simple as 1, 2, 3.
 				</h2>
@@ -198,12 +197,12 @@ const App = () => {
 							<div className="text-primary border-2 px-4 py-1 text-4xl border-primary rounded-full inline-block max-w-full h-14">3</div>
 							<p className="inline font-light ml-3 text-xl">Enjoy your meal after less than 20 minutes. See you the next time!</p>
 						</div>
-						<a href="#" className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 text-white font-bold mt-8 ml-4 md:text-2xl mr-4 hover:bg-darkprimary">Subscribe</a>
+						<a href="#sign-up" className="transition ease-in-out delay-75 inline-block bg-primary rounded-full text-xl px-4 py-2 text-white font-bold mt-8 ml-4 md:text-2xl mr-4 hover:bg-darkprimary">Subscribe</a>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section id="cities">
 				<h2 className="relative mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
 							We're currently in these cities
 				</h2>
@@ -212,7 +211,7 @@ const App = () => {
 				</div>
 			</section>
 			
-			<section className="text-lightgray bg-biryani h-5/6 bg-fixed bg-cover bg-center">
+			<section id="reviews" className="text-lightgray bg-biryani h-5/6 bg-fixed bg-cover bg-center">
 				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
 						Our customers can't live without us
 				</h2>
@@ -237,7 +236,7 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section className="bg-lightgray mt-0 pb-12">
+			<section id="sign-up" className="bg-lightgray mt-0 pb-12">
 				<h2 className="relative pt-10 mb-14 uppercase font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
 						Start Eating Healthy Today
 				</h2>
