@@ -43,7 +43,7 @@ const App = () => {
 
 	const cities = locations.map((city) => {
 		return (
-			<div className="ml-6">
+			<div>
 				<img className="h-48 w-full overflow-hidden" src={ city.url } alt={city.city} />
 				<h3 className="text-2xl mt-3 font-light uppercase">{city.city}</h3>
 				<div>
@@ -76,6 +76,7 @@ const App = () => {
 
   return (
 		<Fragment>
+			{/*} --- Navigation --- {*/}
 			<header className="relative bg-hero-pattern h-screen bg-fixed bg-cover bg-center">
 				<div className={isNavOpen ? "absolute h-screen w-full top-20 opacity-50 bg-gradient-to-b from-black to-white transition-all ease-in-out duration-150" : "invisible"}></div>
 				<nav className="h-20 flex justify-between items-center">
@@ -107,9 +108,10 @@ const App = () => {
 				</div>
 			</header>
 				
+			{/*} --- Food delivery --- {*/}
 			<section id="food-delivery" className="w-4/5 mx-auto">
 				<div className="relative mx-auto">
-					<h2 className="uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+					<h2 className="uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-24 md:after:top-16">
 						Get food fast &mdash; not fast food.
 					</h2>
 					<p className="mt-12 font-light text-center text-2xl">
@@ -147,8 +149,10 @@ const App = () => {
 					</div>
 				</div>
 			</section>
+
+			{/*} --- Meal Photographs --- {*/}
 			<section id="meals">
-				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-24 md:after:top-16">
 							Most sought Dishes &mdash; at your doorstep.
 				</h2>
 				<div className="mt-14 md:grid grid-cols-4">
@@ -178,8 +182,10 @@ const App = () => {
 					</figure>
 				</div>
 			</section>
+			
+			{/*} --- How it works --- {*/}
 			<section id="how-it-works" className="mx-auto">
-				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+				<h2 className="relative uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28 md:after:top-16">
 							How it works &mdash; Simple as 1, 2, 3.
 				</h2>
 				<div className="mt-14 grid md:grid-cols-2 mr-5">
@@ -201,18 +207,20 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-
+			
+			{/*} --- Our Cities --- {*/}
 			<section id="cities">
-				<h2 className="relative mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-16">
+				<h2 className="relative mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28 md:after:top-16">
 							We're currently in these cities
 				</h2>
-				<div className="w-5/6 mx-auto grid md:grid-cols-4">
+				<div className="w-5/6 mx-auto gap-6 grid md:grid-cols-4">
 					{cities}
 				</div>
 			</section>
 			
+			{/*} --- Reviews --- {*/}
 			<section id="reviews" className="text-lightgray bg-biryani h-5/6 bg-fixed bg-cover bg-center">
-				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
+				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-36 md:after:top-28">
 						Our customers can't live without us
 				</h2>
         <div class="w-5/6 mx-auto grid md:grid-cols-3">
@@ -236,8 +244,10 @@ const App = () => {
 					</div>
 				</div>
 			</section>
+
+			{/*} --- Sign up Section --- {*/}
 			<section id="sign-up" className="bg-lightgray mt-0 pb-12">
-				<h2 className="relative pt-10 mb-14 uppercase font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
+				<h2 className="relative pt-10 mb-14 uppercase font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-36 md:after:top-28">
 						Start Eating Healthy Today
 				</h2>
 				<div className="w-4/5 mx-auto grid md:grid-cols-3 gap-14 mt-20">
@@ -245,6 +255,7 @@ const App = () => {
 				</div>
 			</section>
 
+			{/*} --- Footer --- {*/}
 			<footer className="bg-lightgray h-11">
 				<p className="text-darkgray text-xl font-light text-center">Copyright © Pankaj Barnwal</p>
 			</footer>
