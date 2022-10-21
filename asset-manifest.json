@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/rasoi/static/css/main.df38af58.css",
-    "main.js": "/rasoi/static/js/main.ebafa5c2.js",
+    "main.css": "/rasoi/static/css/main.6caca930.css",
+    "main.js": "/rasoi/static/js/main.4c00ad8c.js",
     "static/media/hero_picture.jpg": "/rasoi/static/media/hero_picture.b654235590662feba96c.jpg",
     "static/media/dosa.jpg": "/rasoi/static/media/dosa.4f34fabbd3e7b04d7868.jpg",
     "static/media/fish.jpg": "/rasoi/static/media/fish.2eadb18f832f9df2b301.jpg",
     "static/media/paratha.jpg": "/rasoi/static/media/paratha.769479df752ca21feca6.jpg",
     "static/media/seekh_kebab.jpg": "/rasoi/static/media/seekh_kebab.9a16fb58b96c0229100c.jpg",
+    "static/media/menu-logo.png": "/rasoi/static/media/menu-logo.350cdd768ff197c77a70.png",
     "static/media/jalebi.jpg": "/rasoi/static/media/jalebi.f6f8ea4879219985aca2.jpg",
     "static/media/samosa.jpg": "/rasoi/static/media/samosa.dffccc3e4cd521587212.jpg",
     "static/media/chicken.jpg": "/rasoi/static/media/chicken.0c3589f025cb101a7d0c.jpg",
     "static/media/paneer_kebab.jpg": "/rasoi/static/media/paneer_kebab.9778bbc09bf4607925b3.jpg",
+    "static/media/biryani.jpg": "/rasoi/static/media/biryani.40969fc627d770353af2.jpg",
+    "static/media/delhi.jpg": "/rasoi/static/media/delhi.c3fbbf84e4dca2e55480.jpg",
+    "static/media/mumbai.jpg": "/rasoi/static/media/mumbai.0a573f08cebf2ad009b1.jpg",
+    "static/media/jaipur.jpg": "/rasoi/static/media/jaipur.a250bc4872ca1fc9bb4d.jpg",
+    "static/media/amritsar.jpg": "/rasoi/static/media/amritsar.22465437febcbbd64941.jpg",
+    "static/media/Aparna-Kulkarni.jpg": "/rasoi/static/media/Aparna-Kulkarni.482f367df01bad5e18aa.jpg",
+    "static/media/rashmi-jhawar.jpg": "/rasoi/static/media/rashmi-jhawar.39fde53be1c2a6bb8b38.jpg",
     "static/media/rasoi_logo.png": "/rasoi/static/media/rasoi_logo.5ada802ccd898d17b7c4.png",
+    "static/media/priya-ranjan.jpg": "/rasoi/static/media/priya-ranjan.1fa22ce272a9f4f3cbc3.jpg",
     "index.html": "/rasoi/index.html",
-    "main.df38af58.css.map": "/rasoi/static/css/main.df38af58.css.map",
-    "main.ebafa5c2.js.map": "/rasoi/static/js/main.ebafa5c2.js.map"
+    "main.6caca930.css.map": "/rasoi/static/css/main.6caca930.css.map",
+    "main.4c00ad8c.js.map": "/rasoi/static/js/main.4c00ad8c.js.map"
   },
   "entrypoints": [
-    "static/css/main.df38af58.css",
-    "static/js/main.ebafa5c2.js"
+    "static/css/main.6caca930.css",
+    "static/js/main.4c00ad8c.js"
   ]
 }
