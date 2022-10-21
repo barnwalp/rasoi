@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rasoi/static/css/main.6caca930.css",
-    "main.js": "/rasoi/static/js/main.31ad8e43.js",
+    "main.css": "/rasoi/static/css/main.ecd1bd84.css",
+    "main.js": "/rasoi/static/js/main.706d6a74.js",
     "static/media/hero_picture.jpg": "/rasoi/static/media/hero_picture.b654235590662feba96c.jpg",
     "static/media/dosa.jpg": "/rasoi/static/media/dosa.4f34fabbd3e7b04d7868.jpg",
     "static/media/fish.jpg": "/rasoi/static/media/fish.2eadb18f832f9df2b301.jpg",
@@ -22,11 +22,11 @@
     "static/media/rasoi_logo.png": "/rasoi/static/media/rasoi_logo.5ada802ccd898d17b7c4.png",
     "static/media/priya-ranjan.jpg": "/rasoi/static/media/priya-ranjan.1fa22ce272a9f4f3cbc3.jpg",
     "index.html": "/rasoi/index.html",
-    "main.6caca930.css.map": "/rasoi/static/css/main.6caca930.css.map",
-    "main.31ad8e43.js.map": "/rasoi/static/js/main.31ad8e43.js.map"
+    "main.ecd1bd84.css.map": "/rasoi/static/css/main.ecd1bd84.css.map",
+    "main.706d6a74.js.map": "/rasoi/static/js/main.706d6a74.js.map"
   },
   "entrypoints": [
-    "static/css/main.6caca930.css",
-    "static/js/main.31ad8e43.js"
+    "static/css/main.ecd1bd84.css",
+    "static/js/main.706d6a74.js"
   ]
 }
