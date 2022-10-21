@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import { BsFillPersonFill } from 'react-icons/bs';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { FaCheck } from 'react-icons/fa';
+import { ImCross } from 'react-icons/im';
 import logo from './assets/rasoi_logo.png';
 import locations from './assets/citi-data';
 import signUpData from './assets/sign-up-data.js';
@@ -56,20 +58,20 @@ const App = () => {
 
 	const signUp = signUpData.map((signUpPlan) => {
 		return (
-			<>
+			<div className="bg-white px-4">
 				<div>
-					<h3>{signUpPlan.plan}</h3>
-					<h3>{signUpPlan.rate}</h3>
-					<p>{signUpPlan.ratePerMeal}</p>
+					<h3 className="text-2xl mb-4 font-light uppercase mt-4">{signUpPlan.plan}</h3>
+					<h3 className="text-primary font-light mb-3 text-4xl">{signUpPlan.rate}</h3>
+					<p className="text-sm font-light pb-3 border-b-lightgray border-b-2">{signUpPlan.ratePerMeal}</p>
 				</div>
-				<div>
-					<p>{signUpPlan.frequency}</p>
-					<p>{signUpPlan.orderTime}</p>
-					<p>{signUpPlan.access ? "Access to newest creations" : ""}</p>
-					<p>Free Delivery</p>
+				<div className="py-3">
+					<p className="text-lg font-light mb-1"><FaCheck className="inline mr-2 text-primary"/>{signUpPlan.frequency}</p>
+					<p className="text-lg font-light mb-1"><FaCheck className="inline mr-2 text-primary"/>{signUpPlan.orderTime}</p>
+					<p className="text-lg font-light mb-1">{signUpPlan.access ? <FaCheck className="inline mr-2 text-primary"/> : <ImCross className="inline text-primary" />}{signUpPlan.access ? "Access to newest creations" : ""}</p>
+					<p className="text-lg font-light mb-1"><FaCheck className="inline mr-2 text-primary"/>Free Delivery</p>
 				</div>
-				<a href="#">Sign Up Now</a>
-			</>
+				<a className="transition ease-in-out delay-75 inline-block bg-white border-primary border rounded-full text-lg px-4 py-2 md:text-2xl mr-4 hover:bg-primary hover:text-white mb-4 text-primary" href="#">Sign Up</a>
+			</div>
 		)
 	})
 
@@ -235,11 +237,13 @@ const App = () => {
 					</div>
 				</div>
 			</section>
-			<section>
-				<h2 className="relative pt-10 mb-14 uppercase mt-10 font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
+			<section className="bg-lightgray mt-0 pb-24">
+				<h2 className="relative pt-10 mb-14 uppercase font-light text-4xl text-center after:absolute after:content-[''] after:w-20 after:h-1 after:bg-primary after:mx-auto after:left-0 after:right-0 after:top-28">
 						Start Eating Healthy Today
 				</h2>
-				{ signUp }
+				<div className="w-4/5 mx-auto grid md:grid-cols-3 gap-14 mt-20">
+					{ signUp }
+				</div>
 			</section>
 		</Fragment>
   );
